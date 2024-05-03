@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- BOXES -->
+    <main>
+        <div class="left-side">
+            <img src="assets/jamal.jpg" alt="">
+            <h1>Have a nice day! -Jamal</h1>
+        </div>
+
+        <div class="right-side">
+            <div class="title">
+                <img src="assets/logo.png" alt="">
+                <h1>Currency Converter</h1>
+            </div>
+
+            <div class="container-content">
+                <div class="left">
+                    <label for="">
+                        <select name="" id="converting">
+                            <option value="USD">USD</option>
+                            <option value="IDR">IDR</option>
+                            <option value="EUR">EUR</option>
+                            <option value="JPY">JPY</option>
+                        </select>
+    
+                        <input type="number" placeholder="Input Nominal" id="inputnumber">
+    
+                </div>
+
+                <div class="center">
+                    <p>TO</p>
+                </div>
+    
+                <div class="right">
+                    <label for="">
+                        <select name="" id="converted">
+                            <option value="IDR">IDR</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="JPY">JPY</option>
+                        </select>
+    
+                        <input type="text" readonly id="convertednumber">
+    
+                </div>
+            </div>
+            <div class="convert-box">
+                <button type="submit" onclick="clearText()">CLEAR!</button>
+                <button type="submit" onclick="convert()">CONVERT!</button>
+                <button type="submit" onclick="randomNumber()" style="background-color: rgb(52, 150, 255);">Random NUM!!</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
